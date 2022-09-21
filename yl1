@@ -1,0 +1,20 @@
+const firstname = 'janre'
+const surname = 'Liiv'
+
+let val = firstname + '' + surname
+
+val = 'janre'
+val += surname
+
+val = firstname.toUpperCase()
+val = surname.toLowerCase()
+
+val = surname[0]
+val = surname.Indexof('j')
+val = surname.lastIndexOf('v')
+
+val = surname.charAt(2)
+val = surname.charAt(surname-length - 1)
+
+val = surname.substring(0,4)
+val = surname.slice(0,4)
