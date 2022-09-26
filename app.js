@@ -1,41 +1,36 @@
-/*
-function greeting(name){
-    console.log(`hello! ${name}!`)
-    return `Hello, $(name)!`
-}
+let val;
 
- */
-//greeting('Janre')
-//let greet = greeting('janre')
-//console.log(greet)
+val = document
+val = document.all
+val = document.all[6]
+val = document.all.length
 
-const square = function(number){
-    return number * number
-}
+val = document.head
+val = document.body
 
-//let result = square(3)
-//console.log(result)
-*/
-(function (){
-    console.log('function is running')
-})();
+val = document.doctype
+val = document.domain
+val = document.URL
+val = document.characterSet
+val = document.contentType
 
-(function (name){
-    console.log(`Hello, ${name}`)
-})('Janre')
+val = document.forms
+val = document.forms[0]
+val = document.forms[0].method
+val = document.forms[0].action
+val = document.forms[0].id
 
-const todo = {
-    add: function (){
-        console.log('add todo...')
-    },
-    edit: function (){
-        console.log('edit todo...')
-    },
-    delete: function (){
-        console.log('delete todo...')
-    }
-}
+val = document.links
+val = document.links[1]
+val = document.links[1].id
+val = document.links[1].className
+val = document.links[1].classList
+val = document.links[1].classList[2]
 
-todo.edit()
-todo.edit()
-todo.delete()
+val = document.scripts
+val = document.scripts[1]
+val = document.scripts[0]
+val = document.scripts[1].getAttribute(
+    'src'
+)
+console.log(val)
