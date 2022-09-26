@@ -24,7 +24,15 @@ const square = function(number){
 const todo = {
     add: function (){
         console.log('add todo...')
+    },
+    edit: function (){
+        console.log('edit todo...')
+    },
+    delete: function (){
+        console.log('delete todo...')
     }
 }
 
-todo.edit
+todo.edit()
+todo.edit()
+todo.delete()
