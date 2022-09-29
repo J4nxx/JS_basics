@@ -2,7 +2,6 @@ const form = document.querySelector("form")
 const taskInput = document.querySelector("#task")
 //submit
 form.addEventListener('submit', addTask)
-
 function addTask(e){
     console.log(taskInput.value)
     const li = document.createElement('li')
