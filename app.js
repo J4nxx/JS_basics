@@ -1,27 +1,22 @@
 const form = document.querySelector("form")
 const taskInput = document.querySelector("#task")
-const tasksHeading = document.querySelector("#task-title")
 //submit
-form.addEventListener('submit', runEvent)
+form.addEventListener('submit', addTask)
 
-//keyboard
-//taskInput.addEventListener('keydown', runEvent)
-//taskInput.addEventListener('keyup', runEvent)
-//taskInput.addEventListener('keypress', runEvent)
-
-//focus
-//taskInput.addEventListener('focus', runEvent)
-//taskInput.addEventListener('blur', runEvent)
-
-//inputs
-taskInput.addEventListener('cut', runEvent)
-taskInput.addEventListener('paste', runEvent)
-taskInput.addEventListener('input', runEvent)
-
-
-
-function runEvent(event){
-    console.log("Event type: ${event.type}")
-    tasksHeading.innerText = event.target.value
-    event.preventDefault()
+function addTask(e){
+    console.log(taskInput.value)
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(taskInput.value))
+    li.className = 'collection-item'
+    const a = document.createElement('a')
+    a.appendChild(document.createTextNode('X'))
+    a.className = 'blue-text text-darken-2 secondary-content'
+    a.setAttribute('x')
+    li.appendChild(a)
+    //add to list
+    const ul = document.querySelector('ul')
+    ul.appendChild(li)
+    taskInput.value = ''
+    e.preventDefault()
 }
+
