@@ -2,6 +2,7 @@ const form  = document.querySelector('form')
 const taskInput = document.querySelector('#task')
 const taskList = document.querySelector('ul')
 
+
 form.addEventListener('submit', addTask)
 taskList.addEventListener('click', deleteTask)
 
